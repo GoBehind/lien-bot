@@ -38,8 +38,8 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    r = '無法辨別訊息'
-
+    r = '我不知道什麼是' + event.message.text
+    
     if msg == 'hi':
     	r = 'hi'
     elif msg == '你吃飯了嗎?':
